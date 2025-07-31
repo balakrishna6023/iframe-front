@@ -17,7 +17,7 @@ export class App {
   getMessage() {
     this.http
       .get<{ message: string }>(
-        'https://iframe-test-1.onrender.com/api/message'
+        'https://iframe-back.onrender.com/api/message'
       )
       .subscribe((res) => {
         this.message = res.message;
