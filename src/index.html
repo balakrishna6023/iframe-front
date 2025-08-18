@@ -8,13 +8,12 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
+    <app-root></app-root>
     <script>
       if (window.top !== window.self) {
         document.body.innerHTML =
           "<h1 style='text-align:center;margin-top:20%'>Embedding not allowed</h1>";
-      } else {
-        <app-root></app-root>;
-      }
+      } 
     </script>
   </body>
 </html>
