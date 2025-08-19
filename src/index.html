@@ -11,8 +11,8 @@
     <app-root></app-root>
     <script>
       if (window.top !== window.self) {
-        // Break out of the iframe and navigate to the original URL
-        window.top.location = window.location.href;
+        document.body.innerHTML =
+          "<h1 style='text-align:center;margin-top:20%'>Embedding not allowed</h1>";
       }
     </script>
   </body>
